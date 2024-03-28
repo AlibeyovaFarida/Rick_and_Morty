@@ -24,7 +24,7 @@ const LocationDetailPageLoading = () => {
             .fill("*")
             .map((_, index) => {
               return (
-                <div>
+                <div key={index}>
                   <Skeleton
                     style={style2}
                     variant="rectangular"

@@ -37,6 +37,7 @@ const LocationPageLoading = () => {
                     variant="rectangular"
                     width={"100%"}
                     height={56}
+                    key={index}
                   />
                 );
               })}
@@ -55,7 +56,7 @@ const LocationPageLoading = () => {
             .fill("*")
             .map((_, index) => {
               return (
-                <div className="w-[240px] max-w-[340px] sm:max-w-[300px] md:w-[200px] md:max-w-[240px]">
+                <div className="w-[240px] max-w-[340px] sm:max-w-[300px] md:w-[200px] md:max-w-[240px]" key={index}>
                   <Skeleton
                     style={style2}
                     width={"100%"}
